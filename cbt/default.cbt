@@ -1,0 +1,10 @@
+# # comment
+# @ format_string ; script_file_name ; logging?
+# Use * to denote an interval. Set MM=qq for quarterly, dd=ld for last day of month
+
+# time events
+@ yyyy.06.30.hh:15:00 ; test.cmd ; 1  # Runs on June 30th, 2016 every hour at 15 minutes past the hour
+@ yyyy.06.30.hh:*15:00; test.cmd ; 1  # Runs on June 30th, 2016 every hour at every 15 minute interval (0,15,30,45)
+@ yyyy.qq.ld.14:00:00 ; test.cmd ; 1  # Runs on last day of every quarter at 2:00 PM
+@ yyyy.07.dd.hh:mm:30 ; test.cmd ; 1
+@ yyyy.07.dd.hh.mm:15 ; test.py  ; 1

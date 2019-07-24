@@ -1,0 +1,1 @@
+@start cbot.exe cbt\default.cbt
